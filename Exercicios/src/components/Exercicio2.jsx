@@ -1,39 +1,38 @@
-import { useState } from 'react'
+import { useState } from "react" 
 import './Exercicio2.css'
+// Dois copos meio cheios: Faça um programa para ler um número e 
+// imprimir uma mensagem dizendo se o mesmo é par e positivo ao mesmo 
+// tempo.
 
-function Exercicio2() {  
-  const [resultado, setResultado] = useState()
- 
-  function verificacao(){
-      
-      let numero = Number(prompt("Digite um número para descobrir se ele é par e positivo ao mesmo tempo"))
+function Exercicio2() {
 
-      if(numero > 0){
-          setResultado('Ele é positivo')
+    const[resultado, setResultado] = useState()
 
-      }else if(numero < 0){
-          setResultado('Ele é negativo')
+    function verificar(){
 
-      }else if(numero = 0){
-          setResultado('O número é zero')
-      }
-      
-  } 
+     let numero = Number(prompt("Digite um número: "))
+
+    
+     if(numero % 2 === 0){
+     setResultado("O numero é par e positivo")
+
+     }
+
+     else{
+        setResultado("O numero não é par e positivo")
+     }
+
+    }
+
   return (
+    <div className="Verificacao-container">
+       <h2>Verificação de números: </h2>
 
-      <div className="Verificacao-container">
-      <h2>Seu número é par e positivo?</h2>
-      <button onClick={verificacao}>Descubra aqui</button>
-      
-      <div>
-        Resultado:  {resultado}
-      </div>
-</div>
+ <button onClick={ verificar}>Verificar</button>
 
-)
-        }
-      
-      
+   Resultado: {resultado}
+    </div>
+  )
+}
 
 export default Exercicio2
-
