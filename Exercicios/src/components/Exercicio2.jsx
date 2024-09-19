@@ -1,8 +1,5 @@
 import { useState } from "react" 
 import './Exercicio2.css'
-// Dois copos meio cheios: Faça um programa para ler um número e 
-// imprimir uma mensagem dizendo se o mesmo é par e positivo ao mesmo 
-// tempo.
 
 function Exercicio2() {
 

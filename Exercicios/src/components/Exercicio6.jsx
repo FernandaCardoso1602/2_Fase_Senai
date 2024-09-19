@@ -28,19 +28,18 @@ function Exercicio6() {
            
           }
 
-
   return (
     <div  className="Notas-container">
       <h2>Verifique a sua nota</h2>
-      <h2>Siga a tabela a seguir:
-        (Entre ]9.0[ e [10.0]=A)
-        (Entre ]7.5[ e [9.0]=B)
-        (Entre ]6.0[ e [7.5]=C)
-        (Entre ]4.0[ e [6.0]=D)
-        (Entre [0.0] e [4.0]=E)
+      <h2>Siga a tabela a seguir:  <br />
+        Entre 9.0 e 10.0 = A <br />
+        Entre 7.5 e 9.0 = B <br />
+        Entre 6.0 e 7.5 = C <br />
+        Entre 4.0 e 6.0 = D <br />
+        Entre 0.0 e 4.0 = E <br />
       </h2>
 
-      <button onClick={notas}>verificar</button>
+      <button onClick={notas}>Verificar</button>
 
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./Corrida.css"
+import "./Exercicio4.css"
 
 function Exercicio4() {
 
@@ -15,27 +15,24 @@ function Exercicio4() {
         let tempoMeses
         let velocidade = 300000
 
-        // calculo do tempo ja convertendo de
-        //  segundos para minutos
         tempo = ( distancia / velocidade)
         setResultado(`Distância aproximada : ${tempo}`)
 
 
-    // converte de segundos para minutos
     if(tempo > 60){
 
        tempoMinutos = (tempo * 60)
        setResultado(`Distância aproximada: ${tempoMinutos}`)
     }
         
-    // converte de minutos para horas
+    
     else if(tempo >= 60 ){
 
         tempoHoras = (tempo / 60)
         setResultado(`Distância aproximada: ${tempoHoras}`)
     }
 
-    // horas para dias
+  
     else if( tempoHoras >= 24  ){
 
         tempoDias = (tempoHoras / 24)
